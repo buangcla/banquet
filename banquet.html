@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event & Banquet Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel img.active {
+            opacity: 1;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .package {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+        .package-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .btn-toggle {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn-toggle:hover {
+            background: linear-gradient(45deg, #0056b3, #003f7f);
+            transform: scale(1.05);
+        }
+
+        .btn-inquire {
+        background: linear-gradient(45deg, #28a745, #218838);
+        color: white;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
+    .btn-inquire:hover {
+        background: linear-gradient(45deg, #218838, #1e7e34);
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <img src="https://i.imgur.com/oexLpjf.jpeg" class="active">
+        <img src="https://i.imgur.com/jpcoawx.jpeg">
+        <img src="https://i.imgur.com/BflIJ3c.jpeg">
+    </div>
+    <div class="container">
+        <h2>Wedding Packages</h2>
+        <div class="package">
+            <img src="https://i.imgur.com/rqNVCy6.jpeg" alt="Indoor Venue" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 10px;">
+            <p style="text-align: left; color: #555; font-size: 16px; margin-bottom: 15px;">
+                Say “I do” in Tambuli Seaside Resort and Spa’s unforgettable indoor and outdoor venues, where precious moments come to life.
+                
+            
+            <hr style="border: 0; height: 2px; background: linear-gradient(to right, #007bff, #0056b3); margin: 10px 0 15px;">
+            <div class="package-content">
+                <p><strong>Twogether Package</strong></p>
+                <p>Php 2,300 nett per person</p>
+                <p>Min: 80 persons | Max: 250 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of indoor function venue for four (4) hours</li>
+                    <li>Buffet Lunch or Dinner with one round of drinks</li>
+                    <li>One (1) bottle of house wine</li>
+                    <li>Two (2) nights’ stay in a One-Bedroom Premier Suite with breakfast for two (2) persons</li>
+                    <li>Pre-nuptial shoot good for six (6) persons (excluding food and prior reservation is required)</li>
+                    <li>Use of the stage and the dance floor</li>
+                    <li>Use of the LCD projector with screen</li>
+                    <li>Standard Public Address System with 2 microphones</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Forever More Package</strong></p>
+                <p>Php 2,500 nett per person</p>
+                <p>Min: 80 persons | Max: 250 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of indoor function venue for four (4) hours</li>
+                    <li>Buffet lunch or dinner with one round of drinks</li>
+                    <li>One (1) bottle of sparkling wine for toasting</li>
+                    <li>Two (2) bottles of house wine</li>
+                    <li>Two (2) nights’ stay in a One-Bedroom Premier Suite with breakfast for two (2) persons</li>
+                    <li>One complimentary gift certificate for an overnight stay in a Deluxe Studio room with breakfast for two (2) persons (valid for one year)</li>
+                    <li>Pre-nuptial shoot good for six (6) persons (excluding food and prior reservation is required)</li>
+                    <li>Use of the stage and the dance floor</li>
+                    <li>Use of the LCD projector with screen</li>
+                    <li>Standard Public Address System with 2 microphones</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Wedding Ceremony Package</strong></p>
+                <p>Php 60,000</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of an outdoor venue for two (2) hours</li>
+                    <li>Provision of a back-up venue in case of inclement weather</li>
+                    <li>Standard Public Address System with 2 microphones</li>
+                </ul>
+                <hr>
+                <p><strong>Photoshoot Package</strong></p>
+                <p>Php 10,000</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Use of selected outdoor venue for a maximum of 5 hours</li>
+                    <li>Provision of a holding room</li>
+                    <li>15 packed meals; succeeding at Php300.00 net/pack</li>
+                    <li>Coffee or Tea</li>
+                </ul>
+                <button class="btn-inquire" onclick="window.location.href='https://m.me/tambuliseasideresortandspa?ref=Event%20Inquiry'">Inquire Now</button>
+
+            </div>
+            <button class="btn-toggle">View Details</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Meeting and Party Packages</h2>
+        <div class="package">
+            <img src="https://i.imgur.com/zVupD8r.jpeg" alt="Indoor Venue" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 10px;">
+            <p style="text-align: left; color: #555; font-size: 16px; margin-bottom: 15px;">
+                Plan your next event in a professional and welcoming setting. Whether you are planning a small workplace party or a large conference, our venue offers flexible spaces to accommodate your needs in a polished, friendly environment to make sure your event goes off without a hitch.
+            <hr style="border: 0; height: 2px; background: linear-gradient(to right, #007bff, #0056b3); margin: 10px 0 15px;">
+            <div class="package-content">
+                <p><strong>Half Day Package (4 Hours)</strong></p>
+                <p>Php 1,800 nett per person </p>
+                <p>Min: 10 persons</p>
+                <hr>
+                <p><strong>Full Day Package (8 Hours)</strong></p>
+                <p>Php 2,300 nett per person </p>
+                <p>Min: 10 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Lunch or Dinner buffet with one round of drinks  (choice of soft drinks, iced tea or chilled juices)</li>
+                    <li>Morning and afternoon snacks for full day package, morning or afternoon snacks for half day package</li>
+                    <li>Free flowing coffee, tea and water during the meeting</li>
+                    <li>Use of LCD projector with screen</li>
+                    <li>Provision of mints, pads and pencil</li>
+                    <li>Standard Public Address System</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Team Building Package</strong></p>
+                <p>Php 1,900 nett per person </p>
+                <p>Min: 50 persons | Max: 150 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of indoor function room for six (6) hours</li>
+                    <li>Buffet lunch or dinner with one round of drinks</li>
+                    <li>Use of resort pool and beach</li>
+                    <li>Use of LCD projector with screen/li>
+                    <li>Standard Public Address System</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Party Package</strong></p>
+                <p>Php 1,600 nett per person </p>
+                <p>Min: 50 persons | Max: 250 persons </p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of function room for four (4) hours</li>
+                    <li>Lunch or Dinner buffet with one round of drinks</li>
+                    <li>Provision of dance floor and stage</li>
+                    <li>Use of LCD projector with screen</li>
+                    <li>Standard Public Address System</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Kiddie Package</strong></p>
+                <p>Php 1,000 nett per child</p>
+                <p>Min: 50 persons | Max: 250 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of function room for four (4) hours</li>
+                    <li>Kiddie meal buffet with one round of drinks</li>
+                    <li>Provision of stage</li>
+                    <li>Standard Public Address System</li>
+                    <li>LCD projector with screen</li>
+                    <li>WIFI Access</li>
+                </ul>
+                <button class="btn-inquire" onclick="window.location.href='https://m.me/tambuliseasideresortandspa?ref=Event%20Inquiry'">Inquire Now</button>
+
+            </div>
+            <button class="btn-toggle">View Details</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Debut Packages</h2>
+        <div class="package">
+            <img src="https://i.imgur.com/Xy3CH68.jpeg" alt="Indoor Venue" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 10px;">
+            <p style="text-align: left; color: #555; font-size: 16px; margin-bottom: 15px;">
+                Let us provide the perfect backdrop for your big day, where you can shine and enjoy a once-in-a-lifetime experience in style.
+            <hr style="border: 0; height: 2px; background: linear-gradient(to right, #007bff, #0056b3); margin: 10px 0 15px;">
+            <div class="package-content">
+                <p><strong>18 Treasures</strong></p>
+                <p>Php 2,388 nett per person </p>
+                <p>Min: 80 persons</p>
+                    <li>Exclusive use of function room for four(4) hours</li>
+                    <li>Lunch or dinner buffet with one (1) round of drinks</li>
+                    <li>One (1) night stay in a One-Bedroom Suite with breakfast for two (2) person</li>
+                    <li>Pre-dinner cocktails for 50 persons (light savories and fruit punch)</li>
+                    <li>Use of stage and dance floor</li>
+                    <li>Use of LCD projector with screen</li>
+                    <li>Standard Public Address System with two(2) microphones </li>
+                    <li>WIFI Access</li>
+                </ul>
+                <hr>
+                <p><strong>Cotillion de Honor</strong></p>
+                <p>Php 2,488 nett per person </p>
+                <p>Min: 80 persons</p>
+                <p><strong>Inclusions:</strong></p>
+                <ul>
+                    <li>Exclusive use of function room for four(4) hours</li>
+                    <li>Lunch or dinner buffet with one (1) round of drinks</li>
+                    <li>One(1) Bottle of sparkling wine or red wine</li>
+                    <li>One (1) night stay in a One-Bedroom Suite with breakfast for two (2) person</li>
+                    <li>Pre-dinner cocktails for 50 persons (light savories and fruit punch)</li>
+                    <li>1 whole lechon</li>
+                    <li>Photoshoot good for six(6) persons (excluding food and prior reservations is required)</li>
+                    <li>Use of stage and dance floor</li>
+                    <li>Use of LCD projector with screen</li>
+                    <li>Standard Public Address System with two(2) microphones </li>
+                    <li>WIFI Access</li>
+                </ul>
+                
+                <button class="btn-inquire" onclick="window.location.href='https://m.me/tambuliseasideresortandspa?ref=Event%20Inquiry'">Inquire Now</button>
+
+            </div>
+            <button class="btn-toggle">View Details</button>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.btn-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.previousElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    this.textContent = 'View Details';
+                } else {
+                    content.style.display = 'block';
+                    this.textContent = 'View Less';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
